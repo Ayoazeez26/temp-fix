@@ -1,0 +1,64 @@
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-top: 3px solid #FFF;
+  animation: spin 1s linear infinite;
+  margin: 0 auto !important;
+}
+
+.sign-in-container,
+.sign-up-form {
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sign-up-form {
+  transform: none;
+  position: relative;
+  top: unset;
+  left: unset;
+  padding: 30px 0;
+}
+
+button[type='submit']:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.toggle-password:active i,
+.toggle-password:hover i,
+.toggle-password:focus i {
+  color: #F3761A;
+}
+
+.sign-in-form .toggle-password i {
+  transition: .1s ease;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.mfp-bg {
+  opacity: 0.8 !important;
+}
