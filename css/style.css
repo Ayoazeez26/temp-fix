@@ -250,6 +250,9 @@ img.footer-logo { max-height: 50px; width: auto; }
 	position: relative;
 	top: -1px;
 	height: 54px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .header-widget .button,
@@ -2204,7 +2207,8 @@ body .typed-cursor.typed-cursor--blink.typed-fade-out{
         border-top: 1px solid rgba(255,255,255,0.15);
         display: flex;
         flex-wrap: wrap;
-        align-items: flex-start;
+				align-items: center;
+				
         width: 100%;
     }
 
@@ -18327,10 +18331,15 @@ body .category-box-btn:hover {
 		width: 50%;
 		border-radius: 10px;
 		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		box-shadow: -1px 1px 36px 0px rgba(192,192,192,0.74);
 	-webkit-box-shadow: -1px 1px 36px 0px rgba(192,192,192,0.74);
 	-moz-box-shadow: -1px 1px 36px 0px rgba(192,192,192,0.74);
 	}
+	@media only screen and (max-width: 768px) {.success-message {width: 90%;}}
+
 
 /* PASSBASE BUTTON STYLE */
 	.passbase-container {
@@ -18341,4 +18350,24 @@ body .category-box-btn:hover {
 		position: absolute;
 		top: 8px;
 		right: 0;
+	}
+
+	/* EDIT & DELETE RECIPE BTN */
+
+	.edit-recipe,
+	.delete-recipe {
+		display: inline-block;
+	}
+
+	/* DYNAMIC DASHBOARD */
+	.dynamic-dashboard {
+		color: #F3761A;
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+
+	.dynamic-dashboard:hover {
+		color: #F3761A;
 	}

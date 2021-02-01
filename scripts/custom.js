@@ -492,34 +492,6 @@ $(document).ready(function(){
 	});
 
 
-	 $('.listing-slider').slick({
-		centerMode: true,
-		centerPadding: '20%',
-		slidesToShow: 2,
-		responsive: [
-			{
-			  breakpoint: 1367,
-			  settings: {
-			    centerPadding: '15%'
-			  }
-			},
-			{
-			  breakpoint: 1025,
-			  settings: {
-			    centerPadding: '0'
-			  }
-			},
-			{
-			  breakpoint: 767,
-			  settings: {
-			    centerPadding: '0',
-			    slidesToShow: 1
-			  }
-			}
-		]
-	});
-
-
 	 $('.listing-slider-small').slick({
 		centerMode: true,
 		centerPadding: '0',
